@@ -1,0 +1,17 @@
+@import url("font-face.css");
+
+body{
+    background-color: cadetblue;
+}
+
+h2{
+color: white;
+font-size: 35px;
+}
+
+iframe{
+    width: 350px;
+    height: 350px;
+    border: 3px solid yellow;
+    border-radius: 10px;
+}
