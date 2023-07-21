@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator prog</title>
+
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- Icon Bootstrap -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  </head>
+  <body>
+    <h3 class="text-center mt-2">Standard calculator</h3>
+
+    <section id="calculator" class="mt-2 border border-dark">
+      <div class="container-fluid p-3">
+        <div class="row justify-content-center">
+          <div class="col-sm-12">
+            <h1 class="mt-2">Standard</h1>
+            <div class="calculator_value">
+              <input
+                class="form-control text-end border border-dark border-2 mt-4"
+                type="text"
+                name="result"
+                id="result"
+                placeholder="0"
+                style="font-size: 20px; font-weight: 500"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 1 start -->
+
+      <div class="container-fluid mt-3">
+        <div class="row justify-content-center">
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="%"
+              onclick="return display(this.value)"
+            >
+              %
+            </button>
+          </div>
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="CE"
+            >
+              CE
+            </button>
+          </div>
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="C"
+              onclick="return clearAll(this.value)"
+            >
+              C
+            </button>
+          </div>
+
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="back"
+              onclick="return backAll(this.value)"
+            >
+              <i class="bi bi-backspace"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Row 1 end -->
+
+      <!-- Row 2 start -->
+
+      <div class="container-fluid mt-2">
+        <div class="row justify-content-center">
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="1/x"
+              onclick="return display(this.value)"
+            >
+              <sup>1</sup>/<sub>x</sub>
+            </button>
+          </div>
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              onclick="return sqr(this.value)"
+            >
+              x<sup>2</sup>
+            </button>
+          </div>
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              onclick="return sqrRT(this.value)"
+            >
+              2√X
+            </button>
+          </div>
+
+          <div class="col">
+            <button
+              id="btn"
+              value="/"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="back"
+              onclick="return display(this.value)"
+            >
+              /
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 end -->
+
+      <!-- Row 3 start -->
+
+      <div class="container-fluid mt-2">
+        <div class="row justify-content-center">
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="7"
+              onclick="return display(this.value)"
+            >
+              7
+            </button>
+          </div>
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="8"
+              onclick="return display(this.value)"
+            >
+              8
+            </button>
+          </div>
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="9"
+              onclick="return display(this.value)"
+            >
+              9
+            </button>
+          </div>
+
+          <div class="col">
+            <button
+              id="btn"
+              value="*"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              onclick="return display(this.value)"
+            >
+              X
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3 end -->
+
+      <!-- Row 4 start -->
+
+      <div class="container-fluid mt-2">
+        <div class="row justify-content-center">
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="4"
+              onclick="return display(this.value)"
+            >
+              4
+            </button>
+          </div>
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="5"
+              onclick="return display(this.value)"
+            >
+              5
+            </button>
+          </div>
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="6"
+              onclick="return display(this.value)"
+            >
+              6
+            </button>
+          </div>
+
+          <div class="col">
+            <button
+              id="btn"
+              value="-"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              onclick="return display(this.value)"
+            >
+              -
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 4 end -->
+
+      <!-- Row 5 start -->
+
+      <div class="container-fluid mt-2">
+        <div class="row justify-content-center">
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="1"
+              onclick="return display(this.value)"
+            >
+              1
+            </button>
+          </div>
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="2"
+              onclick="return display(this.value)"
+            >
+              2
+            </button>
+          </div>
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="3"
+              onclick="return display(this.value)"
+            >
+              3
+            </button>
+          </div>
+
+          <div class="col">
+            <button
+              id="btn"
+              value="+"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              onclick="return display(this.value)"
+            >
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 5 end -->
+
+      <!-- Row 6 start -->
+
+      <div class="container-fluid mt-2">
+        <div class="row justify-content-center">
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="1"
+              onclick="return display(this.value)"
+            >
+              <sup>+</sup>/<sub>-</sub>
+            </button>
+          </div>
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="0"
+              onclick="return display(this.value)"
+            >
+              0
+            </button>
+          </div>
+          <div class="col">
+            <button
+              id="btn"
+              type="button"
+              class="btn btn-outline-light text-dark shadow w-100"
+              value="."
+              onclick="return display(this.value)"
+            >
+              .
+            </button>
+          </div>
+
+          <div class="col">
+            <button
+              id="btn"
+              value="="
+              type="button"
+              class="btn btn-primary text-white shadow w-100"
+              onclick="return final(this.value)"
+              style="background-color: rgb(26, 104, 207)"
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 6 end -->
+    </section>
+
+    <!-- Custom JS -->
+
+    <script src="JS/script.js"></script>
+
+    <!-- js Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

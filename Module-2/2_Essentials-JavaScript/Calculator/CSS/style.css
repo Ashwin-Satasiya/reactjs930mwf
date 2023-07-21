@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#calculator{
+    width: 90%;
+    margin: auto;
+    background-color:lightgray;
+    padding: 25px 15px;
+    border: 1px solid black;
+}
+
+
+.col-sm-12, .col  {
+padding: 0;
+}
+
+.btn{
+font-size: 20px;
+background-color:white;
+border: 1px solid black;
+}
