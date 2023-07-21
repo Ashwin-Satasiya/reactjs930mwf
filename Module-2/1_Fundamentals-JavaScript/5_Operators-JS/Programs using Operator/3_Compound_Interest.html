@@ -1,0 +1,11 @@
+<script>
+  // Compound interest
+
+  var principal = 50000;
+  var roi = 7.5;
+  var time_years = 3;
+  var amount = principal * Math.pow(1 + roi / 100, time_years);
+  var compound_interest = amount - principal;
+  document.write("Total Compound amount  is :" + amount, "<br> <br>");
+  document.write("Total Compound interest is :" + compound_interest);
+</script>
