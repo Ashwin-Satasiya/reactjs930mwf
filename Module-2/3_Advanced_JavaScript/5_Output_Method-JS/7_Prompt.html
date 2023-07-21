@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>prompt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <style>
+      body {
+        text-align: center;
+      }
+
+      button {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Calculation</h1>
+
+    <p id="xyz"></p>
+
+    <button type="button" onclick="addi()">Adition</button>
+
+    <button type="button" onclick="substr()">Subctraction</button>
+    <button type="button" onclick="multipli()">Multiplication</button>
+
+    <script>
+      // Addition
+
+      function addi() {
+        var a = parseInt(prompt("Enter the value for a :"));
+        var b = parseInt(prompt("Enter the value for b :"));
+
+        // var c = parseInt(a) + parseInt(b);
+
+        var c = a + b;
+
+        document.getElementById("xyz").innerHTML = c;
+      }
+
+      // Substraction
+
+      function substr() {
+        var a = prompt("Enter the value for a :");
+        var b = prompt("Enter the value for b :");
+        var c = parseInt(a) - parseInt(b);
+
+        document.getElementById("xyz").innerHTML = c;
+      }
+
+      // Multiplication
+
+      function multipli() {
+        var a = parseInt(prompt("Enter the value for A : "));
+        var b = parseInt(prompt("Enter the value for B : "));
+
+        var c = a * b;
+
+        document.getElementById("xyz").innerHTML = c;
+      }
+    </script>
+  </body>
+</html>
