@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/firstapp.github.com.io/static/css/main.2d551155.css",
+    "main.js": "/firstapp.github.com.io/static/js/main.6a0b43da.js",
+    "static/js/787.532e15c9.chunk.js": "/firstapp.github.com.io/static/js/787.532e15c9.chunk.js",
+    "index.html": "/firstapp.github.com.io/index.html",
+    "main.2d551155.css.map": "/firstapp.github.com.io/static/css/main.2d551155.css.map",
+    "main.6a0b43da.js.map": "/firstapp.github.com.io/static/js/main.6a0b43da.js.map",
+    "787.532e15c9.chunk.js.map": "/firstapp.github.com.io/static/js/787.532e15c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d551155.css",
+    "static/js/main.6a0b43da.js"
+  ]
+}
