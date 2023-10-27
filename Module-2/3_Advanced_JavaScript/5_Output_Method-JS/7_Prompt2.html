@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        padding: 10px;
+        background-color: yellow;
+        width: 50%;
+        height: auto;
+        margin-top: 110px;
+        margin-left: 15%;
+        font-size: 30px;
+      }
+
+      button {
+        padding: 10px;
+        font-size: 20px;
+        background-color: blueviolet;
+        color: white;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Click the button</h3>
+
+    <button type="button" onclick="abc()">Click me</button>
+
+    <p id="demo"></p>
+
+    <script>
+      function abc() {
+        var a = prompt("Please enter your name", "Write name here");
+
+        if (a != null) {
+          document.getElementById("demo").innerHTML = a;
+        } else {
+          document.getElementById("demo").innerHTML = "Sorry enter the name";
+        }
+      }
+    </script>
+  </body>
+</html>

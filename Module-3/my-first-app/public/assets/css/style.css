@@ -1,0 +1,75 @@
+body{
+    background-color:steelblue;
+}
+
+#appointment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 400px;
+    margin: 40px  auto  ;
+}
+
+.appoint{
+    width: 45%;
+    margin-right: 10px;
+ 
+}
+
+.appoint img {
+    width: 100%;
+}
+
+.form{
+    width: 45%;
+    padding: px;
+  
+}
+
+.form input{
+    width: 250px;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 2px solid black;
+    color: white;
+    background-color: steelblue;
+}
+
+
+.form input::placeholder {
+    color: white;
+    font-size: 15px;
+}
+
+input[type="submit"]{
+    background-color: brown;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    width: 150px;
+    margin-left: 70px;
+    
+}
+
+.test{
+    border: 1px solid black; 
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.fade-left{
+    background-color: chocolate;
+    border: 2px solid red;
+    margin-bottom: 100px;
+    width: 50%;
+}
+.fade-right{
+background-color: cyan;
+border: 2px solid yellow;
+width: 50%;
+}

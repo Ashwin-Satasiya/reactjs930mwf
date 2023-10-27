@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>This</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script>
+      function abc() {
+        const xyz = {
+          name: "Mahesh",
+          age: 45,
+          state: "Andhra Pradesh",
+          mobile: 2835743923,
+        };
+
+        var adding = document.getElementById("header");
+
+        var pro = "Name : " + xyz.name + " " + "Age : " + xyz.age;
+
+        adding.innerHTML = pro;
+        adding.style.background = "red";
+        adding.style.height = "100px";
+        adding.style.width = "50%";
+        adding.style.textAlign = "center";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h3 id="header"></h3>
+
+    <button type="button" id="btn" onmouseover="abc(this.value)">
+      Click here
+    </button>
+  </body>
+</html>
