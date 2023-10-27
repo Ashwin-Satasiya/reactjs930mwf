@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio.github.com.io/static/css/main.eaa816db.css",
+    "main.js": "/portfolio.github.com.io/static/js/main.d6f7e28e.js",
+    "static/js/787.c7a62e83.chunk.js": "/portfolio.github.com.io/static/js/787.c7a62e83.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/portfolio.github.com.io/static/media/bootstrap-icons.449ad8adf6ae0424b7ed.woff",
+    "static/media/bootstrap-icons.woff2?": "/portfolio.github.com.io/static/media/bootstrap-icons.dea24bf5a7646d8b84e7.woff2",
+    "static/media/Login.png": "/portfolio.github.com.io/static/media/Login.a14b5555e72a4dd85185.png",
+    "static/media/cabin.png": "/portfolio.github.com.io/static/media/cabin.4417330275f78faa31c3.png",
+    "static/media/circus.png": "/portfolio.github.com.io/static/media/circus.494a4a914b5471b41f3e.png",
+    "static/media/game.png": "/portfolio.github.com.io/static/media/game.a940b57aa7bab2eacc52.png",
+    "static/media/submarine.png": "/portfolio.github.com.io/static/media/submarine.48c9704ca7f8ce901038.png",
+    "static/media/safe.png": "/portfolio.github.com.io/static/media/safe.01792c0bdc342bf4bf9c.png",
+    "static/media/cake.png": "/portfolio.github.com.io/static/media/cake.6554473016d32b343f02.png",
+    "static/media/avataaars.svg": "/portfolio.github.com.io/static/media/avataaars.aa9aff02ddd0ef36a1724ecef4133df9.svg",
+    "index.html": "/portfolio.github.com.io/index.html",
+    "main.eaa816db.css.map": "/portfolio.github.com.io/static/css/main.eaa816db.css.map",
+    "main.d6f7e28e.js.map": "/portfolio.github.com.io/static/js/main.d6f7e28e.js.map",
+    "787.c7a62e83.chunk.js.map": "/portfolio.github.com.io/static/js/787.c7a62e83.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eaa816db.css",
+    "static/js/main.d6f7e28e.js"
+  ]
+}
